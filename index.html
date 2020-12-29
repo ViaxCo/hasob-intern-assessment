@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hasob Internship Assessment</title>
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <main>
+            <header>
+                <h1>Questionnaire</h1>
+            </header>
+            <form action="" method="POST">
+                <ol>
+                    <!-- Question 1 -->
+                    <div class="form-group">
+                        <li id="q1">What is your name?</li>
+                        <label class="radio-label">
+                            <input class="radio-control" type="radio" name="radio" value="john">
+                            John
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio-control" type="radio" name="radio" value="james">
+                            James
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio-control" type="radio" name="radio" value="jonah">
+                            Jonah
+                        </label>
+                        <label class="radio-label">
+                            <input class="radio-control" type="radio" name="radio" value="jonathan">
+                            Jonathan
+                        </label>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="form-group">
+                        <li id="q2">How old are you?</li>
+                        <select name="age" id="age" class="input-control" required>
+                            <option disabled selected value="">Select your age</option>
+                            <option value="18-24">18-24</option>
+                            <option value="25-54">25-54</option>
+                            <option value="55-70">55-70</option>
+                            <option value="70+">70+</option>
+                        </select>
+                    </div>
+                    <!-- Question 3 -->
+                    <div class="form-group">
+                        <li id="q3">What are your hobbies?</li>
+                        <label class="checkbox-label">
+                            <input class="checkbox-control" type="checkbox" name="reading" value="reading">
+                            Reading
+                        </label>
+                        <label class="checkbox-label">
+                            <input class="checkbox-control" type="checkbox" name="drinking" value="drinking">
+                            Drinking
+                        </label>
+                        <label class="checkbox-label">
+                            <input class="checkbox-control" type="checkbox" name="swimming" value="swimming">
+                            Swimming
+                        </label>
+                        <label class="checkbox-label">
+                            <input class="checkbox-control" type="checkbox" name="sports" value="sports">
+                            Sports
+                        </label>
+                    </div>
+                    <!-- Question 4 -->
+                    <div class="form-group">
+                        <li id="q4">What is your email address?</li>
+                        <input class="input-control" id="email" type="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                </ol>
+                <div class="form-group btn-div">
+                    <button class="submit" type="submit">Submit</button>
+                </div>
+            </form>
+        </main>
+
+        <script src="index.js"></script>
+    </body>
+
+</html>
